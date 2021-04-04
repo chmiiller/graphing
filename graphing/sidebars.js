@@ -19,7 +19,7 @@ module.exports = {
             type: 'category',
             label: 'Client Docs',
             items: [
-                'client/starting',
+                'client/starting-client',
             ],
         },
     ],
