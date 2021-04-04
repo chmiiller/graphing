@@ -1,6 +1,6 @@
 import React, { useState, } from 'react';
-import { useMutation } from '@apollo/client';
-import { graphql, compose } from '@apollo/client/react/hoc';
+import { useMutation, useQuery } from '@apollo/client';
+import { graphql } from '@apollo/client/react/hoc';
 
 import {
     addBookMutation,
@@ -8,7 +8,8 @@ import {
     getBooksQuery
 } from '../api/queries';
 
-function AddBook({ data }) {
+function AddBook() {
+    const { loading, data } = useQuery(getAuthorsQuery);
     const [addBook] = useMutation(addBookMutation);
     const [name, setName] = useState('');
     const [genre, setGenre] = useState('');
@@ -27,14 +28,14 @@ function AddBook({ data }) {
 
     const submitForm = (e) => {
         e.preventDefault();
-        // addBook({
-        //     variables: {
-        //         name,
-        //         genre,
-        //         authorId
-        //     },
-        //     refetchQueries: [{ query: getBooksQuery }],
-        // });
+        addBook({
+            variables: {
+                name,
+                genre,
+                authorId
+            },
+            refetchQueries: [{ query: getBooksQuery }],
+        });
         setName('');
         setGenre('');
         setAuthorId('');
@@ -43,7 +44,7 @@ function AddBook({ data }) {
 
     return (
         <div id="main">
-            { data.loading &&
+            { loading &&
                 <div>
                     Loading Authors
                 </div>
