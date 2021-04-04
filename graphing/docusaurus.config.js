@@ -3,7 +3,7 @@ module.exports = {
   title: "GraphingQL",
   tagline: "First time trying GraphQL out",
   url: "https://chmiiller.github.io",
-  baseUrl: "/",
+  baseUrl: "/graphing/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
