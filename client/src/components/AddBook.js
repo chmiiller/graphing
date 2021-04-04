@@ -86,7 +86,7 @@ function AddBook({ data }) {
                 </select>
             </div>
 
-            <button>Add</button>
+            <button>+</button>
         </form>
         </div>
         
