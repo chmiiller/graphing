@@ -17,7 +17,7 @@ const features = [
         and a React client for this server to clearly see how good and easy it is and why so many dev teams are using it today.
         <br/><br/>
         This project is based on a tutorial series by <a target="_blank" href="https://www.youtube.com/c/TheNetNinja">The Net Ninja </a>
-        where we create a server with NodeJS, MongoDB and GraphQL for storying books and their authors. To browse through these collections
+        where we create a server with NodeJS, MongoDB and GraphQL for storing books and their authors. To browse through these collections
         we also develop a React client with some simple components to display and add new entries.
       </>
     ),

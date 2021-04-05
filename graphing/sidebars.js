@@ -3,6 +3,7 @@ module.exports = {
         {
             type: 'category',
             label: 'General',
+            collapsed: false,
             items: [
                 'about',
                 'stack',
@@ -10,7 +11,8 @@ module.exports = {
         },
         {
             type: 'category',
-            label: 'Server Docs',
+            label: 'Server',
+            collapsed: false,
             items: [
                 'server/starting',
                 'server/middleware',
@@ -22,7 +24,8 @@ module.exports = {
         },
         {
             type: 'category',
-            label: 'Client Docs',
+            label: 'Client',
+            collapsed: false,
             items: [
                 'client/starting-client',
                 {
