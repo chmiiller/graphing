@@ -13,6 +13,11 @@ module.exports = {
             label: 'Server Docs',
             items: [
                 'server/starting',
+                'server/middleware',
+                'server/schema',
+                'server/mongo-model',
+                'server/root-query',
+                'server/mutations',
             ],
         },
         {

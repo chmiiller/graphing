@@ -4,7 +4,7 @@ slug: /
 ---
 
 
-This repo is just a reference project made by me in order to understand and implement for the first time a GraphQL server and experiment a little bit on how to use it. Besides a GraphQL Server, this repo also has a React client using GraphQL + Apollo for queries and mutations.
+This repo is just a reference project that I've made in order to understand and implement for the first time a GraphQL server and experiment a little bit on how to use it. Besides a GraphQL Server, this repo also has a React client using GraphQL + Apollo for queries and mutations.
 
 ## Reference
 

@@ -6,6 +6,7 @@ Below is the stack suggested by The Net Ninja's playlist
 ## Backend
 #### NodeJS
 #### Express
+#### express-graphql
 #### GraphQL
 #### Graphiql
 #### MongoDB
