@@ -1,6 +1,5 @@
 import React, { useState, } from 'react';
 import { useMutation, useQuery } from '@apollo/client';
-import { graphql } from '@apollo/client/react/hoc';
 
 import {
     addBookMutation,
@@ -94,4 +93,4 @@ function AddBook() {
     );
 }
 
-export default graphql(getAuthorsQuery)(AddBook);
+export default AddBook;

@@ -10,6 +10,15 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  color: #fff;
+  background-image:url("../../static/img/vlado-paunovic-iBG594vhR1k-unsplash.jpg");
+}
+
+.photoBy {
+  color: #fff;
+  font-size: 12px;
+  margin: 6px;
 }
 
 @media screen and (max-width: 966px) {

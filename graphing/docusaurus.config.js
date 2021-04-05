@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: "GraphingQL",
-  tagline: "First time trying GraphQL out",
+  tagline: "Reference project to learn and understand GraphQL",
   url: "https://chmiiller.github.io",
   baseUrl: "/graphing/",
   onBrokenLinks: "throw",
@@ -32,30 +32,7 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Getting Started",
-              to: "docs/",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Another cool project",
-              href: "https://github.com/chmiiller",
-            },
-			{
-				label: "My GitHub",
-				href: "https://github.com/chmiiller",
-			  },
-          ],
-        },
-      ],
+      
       copyright: `Copyright © ${new Date().getFullYear()} Carlos Zinato. Docs built with Docusaurus.`,
     },
   },

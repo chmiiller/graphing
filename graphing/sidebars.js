@@ -25,6 +25,14 @@ module.exports = {
             label: 'Client Docs',
             items: [
                 'client/starting-client',
+                {
+                    Components: [
+                        'client/components/App',
+                        'client/components/AddBook',
+                        'client/components/BookList',
+                        'client/components/BookDetails',
+                    ],
+                }
             ],
         },
     ],

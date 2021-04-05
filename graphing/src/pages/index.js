@@ -7,36 +7,22 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 const features = [
+  { title: '' },
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'GraphQL + React - First project',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Hi there, I'm <a target="_blank" href="https://github.com/chmiiller">Carlos Zinato</a> and this repo is
+        just a reference project that I've made in order to understand and implement for the first time GraphQL
+        and a React client for this server to clearly see how good and easy it is and why so many dev teams are using it today.
+        <br/><br/>
+        This project is based on a tutorial series by <a target="_blank" href="https://www.youtube.com/c/TheNetNinja">The Net Ninja </a>
+        where we create a server with NodeJS, MongoDB and GraphQL for storying books and their authors. To browse through these collections
+        we also develop a React client with some simple components to display and add new entries.
       </>
     ),
   },
-  {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+  { title: '' },
 ];
 
 function Feature({imageUrl, title, description}) {
@@ -59,8 +45,8 @@ export default function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Reference project to learn and understand GraphQL">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -72,11 +58,14 @@ export default function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              Documentation
             </Link>
           </div>
         </div>
       </header>
+      <p className={styles.photoBy}>
+        Photo by <a target="_blank" href="https://unsplash.com/@vlado">Vlado Paunovic</a>
+      </p>
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { graphql } from '@apollo/client/react/hoc';
+import { useQuery } from '@apollo/client';
 
 import { getBooksQuery } from '../api/queries';
 import BookDetails from './BookDetails';
 
-function BookList({ data }) {
+function BookList() {
+    const { loading, data } = useQuery(getBooksQuery);
     const [selectedBook, setSelectedBook] = useState(null);
     const displayBooks = () => {
         if (data && data.books) {
@@ -24,10 +25,8 @@ function BookList({ data }) {
     };
     return (
         <div id="main">
-            {data.loading &&
-                <div>
-                    Loading books...
-                </div>
+            {loading &&
+                <div>Loading books...</div>
             }
             <ul id="book-list">
                 {displayBooks()}
@@ -37,4 +36,4 @@ function BookList({ data }) {
     );
 }
 
-export default graphql(getBooksQuery)(BookList);
+export default BookList;
